@@ -62,7 +62,8 @@ def menu_modelling():
     knn.fit(X_train_pca, y_train)
     y_pred = knn.predict(X_test_pca)
     accuracy = accuracy_score(y_test, y_pred)
-    accuracy
+    st.write(f"Kombinasi terbaik: PCA = {n_component}, K = {n_neighbors}")
+    st.write(f"Akurasi terbaik: {accuracy}")
     
 # Menu Implementasi
 def menu_implementasi():
